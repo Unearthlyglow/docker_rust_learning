@@ -1,0 +1,11 @@
+1. Docker is used for building running and shipping applications.
+
+**Solves the problem of "My application works on my machine, however I dont know specifically as to why it does not work on your machine".  
+
+ single-stage Dockerfile which handles both the building and running of our Rust app.
+
+ Pushing to repository
+ 1. First create the repo on dockerhub 
+ 2. Make sure you're logged in with the CLI attached to the project :: docker login 
+ 3. Build image with tag name :: ' docker build -t unearthlyglow/push-example . '
+ 4. Pushing to repository :: ' docker push -t unearthlyglow/push-example
